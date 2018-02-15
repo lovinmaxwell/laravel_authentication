@@ -1,6 +1,6 @@
-#Authentication
+# Authentication
 
-This project is related to tutorial from [Varun Pandurangaiah], you can checkout [Live Demo Here :zap:].
+This project is related to tutorial from [ Varun Pandurangaiah ], you can checkout [Live Demo Here :zap:].
 
 In the tutorial I am creating Laravel application  with email authentication and user roles, but I am also using [Laravel Socialite] for Facebook, Twitter, Google+ and GitHub logins.
 At the end of this tutorial you will be able to use any other social provider in matter of seconds.
@@ -16,13 +16,13 @@ Frontend uses Bootstrap 4 and Material Design for Bootstrap free theme.
 ### What is covered
 Everything is covered there so new Laravel developers can grasp it quickly. I am following simple plan while I am developing:
 
-  - [Creating views for application]
-  - [Creating migrations and models related to users and roles]
-  - [User seeder with some dummy users]
-  - [Middleware for administrator and user roles]
-  - [Routes and AuthController]
-  - [Creating table and model for Social logins]
-  - [Creating Social Logic]
+  - Creating views for application
+  - Creating migrations and models related to users and roles
+  - User seeder with some dummy users
+  - Middleware for administrator and user roles
+  - Routes and AuthController]
+  - Creating table and model for Social logins
+  - Creating Social Logic
 
 This plan is not strict and if you are familiar with something you may just skip that part.
 
