@@ -1,6 +1,6 @@
-# Laravel Social and Email Authentication
+#Authentication
 
-This project is related to tutorial from [Codingo Tuts], you can checkout [Live Demo Here :zap:].
+This project is related to tutorial from [Varun Pandurangaiah], you can checkout [Live Demo Here :zap:].
 
 In the tutorial I am creating Laravel application  with email authentication and user roles, but I am also using [Laravel Socialite] for Facebook, Twitter, Google+ and GitHub logins.
 At the end of this tutorial you will be able to use any other social provider in matter of seconds.
@@ -11,7 +11,7 @@ On registration form via email, users are required to complete Google Re-captcha
 
 Frontend uses Bootstrap 4 and Material Design for Bootstrap free theme.
 
-![Login Page Design](https://tuts.codingo.me/wp-content/uploads/2016/10/auth-login.png "Login Page")
+<!-- ![Login Page Design](https://tuts.codingo.me/wp-content/uploads/2016/10/auth-login.png "Login Page") -->
 
 ### What is covered
 Everything is covered there so new Laravel developers can grasp it quickly. I am following simple plan while I am developing:
@@ -65,7 +65,7 @@ Project is not over, I will publish few more tutorials regarding this matter. Yo
   - Taking emails of users who sign-up over Twitter and other providers which don't share that data
   - User account actions, like change password, change email etc
 
-[Creating views for application]:http://tuts.codingo.me/laravel-social-and-email-authentication/#creating-views
+<!-- [Creating views for application]:http://tuts.codingo.me/laravel-social-and-email-authentication/#creating-views
 [Creating migrations and models related to users and roles]:http://tuts.codingo.me/laravel-social-and-email-authentication/#migrations-users
 [User seeder with some dummy users]:http://tuts.codingo.me/laravel-social-and-email-authentication/#user-role-seeders
 [Middleware for administrator and user roles]:http://tuts.codingo.me/laravel-social-and-email-authentication/#middleware
@@ -73,4 +73,4 @@ Project is not over, I will publish few more tutorials regarding this matter. Yo
 [Creating table and model for Social logins]:http://tuts.codingo.me/laravel-social-and-email-authentication/#pull-socialite
 [Creating Social Logic]:http://tuts.codingo.me/laravel-social-and-email-authentication/#social-logic
 [Codingo Tuts]:http://tuts.codingo.me/laravel-social-and-email-authentication
-[Live Demo Here :zap:]:http://demo1.codingo.me
+[Live Demo Here :zap:]:http://demo1.codingo.me -->
