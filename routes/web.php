@@ -39,7 +39,7 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth:user'], function()
     });
 
 });
-
+Route::get('/profile','PagesController@profile');
 Route::group(['middleware' => 'auth:all'], function()
 {
     $a = 'authenticated.';

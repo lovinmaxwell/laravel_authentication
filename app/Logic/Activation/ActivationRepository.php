@@ -6,12 +6,13 @@ use App\Models\Activation;
 use App\Models\User;
 use App\Notifications\SendActivationEmail;
 use Carbon\Carbon;
-
+use Log;
 class ActivationRepository
 {
 
     public function createTokenAndSendEmail(User $user)
     {
+
         // Limit number of activation attempts to 3 in 24 hours window
         $activations = Activation::where('user_id', $user->id)
             ->where('created_at', '>=', Carbon::now()->subHours(24))
