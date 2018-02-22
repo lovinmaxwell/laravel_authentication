@@ -111,6 +111,9 @@
                         <a class="nav-link" href="{{ Auth::user()->homeUrl() }}"><i class="fa fa-user"></i> {{ Auth::user()->first_name }}</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="user/profile"><i class="fa fa-user"></i> My Profile</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ url('logout') }}"><i class="fa fa-sign-out"></i> Logout</a>
                     </li>
                     @endif

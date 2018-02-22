@@ -18,7 +18,6 @@ class SocialController extends Controller
 
     public function getSocialRedirect( $provider )
     {
-Log::info($provider);
         $providerKey = Config::get('services.' . $provider);
 
         if (empty($providerKey)) {

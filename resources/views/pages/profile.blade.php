@@ -18,17 +18,17 @@
                                                 <li>
                                                     <div class="form-group">
                                                         <label for="fname">First Name <span class="required">*</span></label>
-                                                        <input name="fname" id="fname" class="form-control" placeholder="Mr." type="text">
+                                                        <input name="fname" id="fname" class="form-control" value="{{Auth::User()->first_name}}" placeholder="First Name" type="text">
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="lname">Last Name <span class="required">*</span></label>
-                                                        <input name="lname" id="lname" class="form-control" placeholder="Atiar" type="text">
+                                                        <input name="lname" id="lname" class="form-control" value="{{Auth::User()->last_name}}" placeholder="Last Name" type="text">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="form-group">
                                                         <label for="emailAddress">Email Address <span class="required">*</span></label>
-                                                        <input name="email" id="emailAddress" class="form-control" placeholder="mr-atiar@example.com" type="email">
+                                                        <input name="email" id="emailAddress" class="form-control" value="{{Auth::User()->email}}" placeholder="varun.p@ellipsonic.com" type="email">
                                                     </div>
                                                 </li>
                                             </ul>

@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+Route::get('user/verify/{verification_code}', 'ApiAuthController@verifyUser');
 $s = 'public.';
 Route::get('/',         ['as' => $s . 'home',   'uses' => 'PagesController@getHome']);
 
@@ -31,6 +31,7 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth:user'], function()
 {
     $a = 'user.';
     Route::get('/', ['as' => $a . 'home', 'uses' => 'UserController@getHome']);
+    Route::get('/profile','PagesController@profile');
 
     Route::group(['middleware' => 'activated'], function ()
     {
@@ -39,7 +40,6 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth:user'], function()
     });
 
 });
-Route::get('/profile','PagesController@profile');
 Route::group(['middleware' => 'auth:all'], function()
 {
     $a = 'authenticated.';
