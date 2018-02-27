@@ -10,6 +10,8 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Route::get('insta', 'ApiAuthController@insta');
+
 Route::get('user/verify/{verification_code}', 'ApiAuthController@verifyUser');
 $s = 'public.';
 Route::get('/',         ['as' => $s . 'home',   'uses' => 'PagesController@getHome']);

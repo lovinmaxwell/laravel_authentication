@@ -9,6 +9,7 @@ use Validator;
 use DB, Hash, Mail;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Mail\Message;
+use Log;
 class ApiAuthController extends Controller
 {
     /**
@@ -17,6 +18,10 @@ class ApiAuthController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
+     public function insta(Request $request)
+     {
+       Log::info($request->all());
+     }
     public function register(Request $request)
     {
         $rules = [
@@ -48,7 +53,8 @@ class ApiAuthController extends Controller
                 $mail->to($email, $name);
                 $mail->subject($subject);
             });
-        return response()->json(['success'=> true, 'message'=> 'Thanks for signing up! Please check your email to complete your registration.']);
+        return response()->json(['success'=> true,
+         'message'=> 'Thanks for signing up! Please check your email to complete your registration.']);
     }
     public function verifyUser($verification_code)
     {
